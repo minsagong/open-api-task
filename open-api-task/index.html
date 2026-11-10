@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>랜덤 고양이 Open API 과제</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; text-align: center; margin-top: 100px; background-color: #f9f9f9; }
+        button { padding: 12px 24px; font-size: 16px; cursor: pointer; background-color: #4f46e5; color: white; border: none; border-radius: 8px; }
+        button:hover { background-color: #4338ca; }
+        #cat-box { margin-top: 30px; }
+        img { max-width: 400px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <h1>🐾 랜덤 고양이 Open API 웹페이지</h1>
+    <p>버튼을 누르면 서버에서 고양이 데이터를 받아와 화면에 띄워줍니다!</p>
+    
+    <button onclick="fetchCat()">고양이 사진 가져오기</button>
+
+    <div id="cat-box">
+        <p>아직 불러온 데이터가 없습니다.</p>
+    </div>
+
+    <!-- 자바스크립트 파일 연결 -->
+    <script src="script.js"></script>
+</body>
+</html>
